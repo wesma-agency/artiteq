@@ -1,0 +1,569 @@
+@@include("components/_header.html") 
+
+@@include("components/_catalog-menu.html")
+
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__wrap">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="#">Личный кабинет</a></li>
+                <li class="breadcrumbs__item"><span>Мои заказы</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="profile">
+    <div class="container">
+        <div class="profile__title title-h1">Мои заказы</div>
+    </div>
+
+    <div class="profile__link profile-links">
+        <div class="container">
+            <div class="profile-links__list">
+                <div class="profile-links__item"><a class="profile-links__link current" href="#">Мои заказы</a></div>
+                <div class="profile-links__item"><a class="profile-links__link" href="#">Персональные данные</a></div>
+                <div class="profile-links__item"><a class="profile-links__link" href="#">Бонусная система</a></div>
+                <div class="profile-links__item"><a class="profile-links__link" href="#">Избранное</a></div>
+                <div class="profile-links__item"><a class="profile-links__link" href="#">Моя корзина</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile__order profile-order">
+        <div class="container">
+            <div class="profile-order__tabs profile-tabs">
+                <div class="profile-order__control profile-tabs__control">
+                    <div class="profile-order__button profile-tabs__button current" data-item="tabs-1">Текущие заказы</div>
+                    <div class="profile-order__button profile-tabs__button" data-item="tabs-2">Выполненные заказы</div>
+                    <div class="profile-order__button profile-tabs__button" data-item="tabs-3">Отменные заказы</div>
+                </div>
+    
+                <div class="profile-order__content profile-tabs__content">
+                    <div class="profile-order__item profile-tabs__item current" id="tabs-1">
+                        <div class="profile-order__list">
+                            <div class="order-current">
+                                <div class="order-current__wrap">
+                                    <div class="order-current__column">
+                                        <div class="order-current__group">
+                                            <div class="order-current__number">№ 1125005</div>
+                                            <div class="order-current__status --new">Новый</div>
+                                        </div>
+        
+                                        <div class="order-current__group">
+                                            <div class="order-current__cancel order-cancel">
+                                                <a href="#">Отменить заказ</a>
+                                                <div class="order-cancel__hint">
+                                                    Отмена заказа возможна в течение 2х часов после оформления.
+                                                </div>
+                                            </div>
+                                            <div class="order-current__repeat order-repeat">
+                                                <a href="#">Повторить заказ</a>
+                                            </div>
+                                            <div class="order-current__watch">
+                                                <a href="#">Посмотреть заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Дата создания</div>
+                                        <div class="order-current__text">01.10.2020</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ доставки</div>
+                                        <div class="order-current__text">Доставка по Московской области</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ оплаты</div>
+                                        <div class="order-current__text">Наличный при получении</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Сумма</div>
+                                        <div class="order-current__price">2 220 642 р.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-current">
+                                <div class="order-current__wrap">
+                                    <div class="order-current__column">
+                                        <div class="order-current__group">
+                                            <div class="order-current__number">№ 1125005</div>
+                                            <div class="order-current__status --accepted">Принят</div>
+                                        </div>
+        
+                                        <div class="order-current__group">
+                                            <div class="order-current__cancel order-cancel">
+                                                <a href="#">Отменить заказ</a>
+                                                <div class="order-cancel__hint">
+                                                    Отмена заказа возможна в течение 2х часов после оформления.
+                                                </div>
+                                            </div>
+                                            <div class="order-current__repeat order-repeat">
+                                                <a href="#">Повторить заказ</a>
+                                            </div>
+                                            <div class="order-current__watch">
+                                                <a href="#">Посмотреть заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Дата создания</div>
+                                        <div class="order-current__text">01.10.2020</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ доставки</div>
+                                        <div class="order-current__text">Доставка по Московской области</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ оплаты</div>
+                                        <div class="order-current__text">Наличный при получении</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Сумма</div>
+                                        <div class="order-current__price">2 220 642 р.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-current">
+                                <div class="order-current__wrap">
+                                    <div class="order-current__column">
+                                        <div class="order-current__group">
+                                            <div class="order-current__number">№ 1125005</div>
+                                            <div class="order-current__status --confirmed">Подтвержден</div>
+                                        </div>
+        
+                                        <div class="order-current__group">
+                                            <div class="order-current__cancel order-cancel">
+                                                <a href="#">Отменить заказ</a>
+                                                <div class="order-cancel__hint">
+                                                    Отмена заказа возможна в течение 2х часов после оформления.
+                                                </div>
+                                            </div>
+                                            <div class="order-current__repeat order-repeat">
+                                                <a href="#">Повторить заказ</a>
+                                            </div>
+                                            <div class="order-current__watch">
+                                                <a href="#">Посмотреть заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Дата создания</div>
+                                        <div class="order-current__text">01.10.2020</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ доставки</div>
+                                        <div class="order-current__text">Доставка по Московской области</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ оплаты</div>
+                                        <div class="order-current__text">Наличный при получении</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Сумма</div>
+                                        <div class="order-current__price">2 220 642 р.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-current">
+                                <div class="order-current__wrap">
+                                    <div class="order-current__column">
+                                        <div class="order-current__group">
+                                            <div class="order-current__number">№ 1125005</div>
+                                            <div class="order-current__status --paid">Оплачен</div>
+                                        </div>
+        
+                                        <div class="order-current__group">
+                                            <div class="order-current__cancel order-cancel">
+                                                <a href="#">Отменить заказ</a>
+                                                <div class="order-cancel__hint">
+                                                    Отмена заказа возможна в течение 2х часов после оформления.
+                                                </div>
+                                            </div>
+                                            <div class="order-current__repeat order-repeat">
+                                                <a href="#">Повторить заказ</a>
+                                            </div>
+                                            <div class="order-current__watch">
+                                                <a href="#">Посмотреть заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Дата создания</div>
+                                        <div class="order-current__text">01.10.2020</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ доставки</div>
+                                        <div class="order-current__text">Доставка по Московской области</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ оплаты</div>
+                                        <div class="order-current__text">Наличный при получении</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Сумма</div>
+                                        <div class="order-current__price">2 220 642 р.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-current">
+                                <div class="order-current__wrap">
+                                    <div class="order-current__column">
+                                        <div class="order-current__group">
+                                            <div class="order-current__number">№ 1125005</div>
+                                            <div class="order-current__status --delivered">Доставляется</div>
+                                        </div>
+        
+                                        <div class="order-current__group">
+                                            <div class="order-current__cancel order-cancel">
+                                                <a href="#">Отменить заказ</a>
+                                                <div class="order-cancel__hint">
+                                                    Отмена заказа возможна в течение 2х часов после оформления.
+                                                </div>
+                                            </div>
+                                            <div class="order-current__repeat order-repeat">
+                                                <a href="#">Повторить заказ</a>
+                                            </div>
+                                            <div class="order-current__watch">
+                                                <a href="#">Посмотреть заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Дата создания</div>
+                                        <div class="order-current__text">01.10.2020</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ доставки</div>
+                                        <div class="order-current__text">Доставка по Московской области</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ оплаты</div>
+                                        <div class="order-current__text">Наличный при получении</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Сумма</div>
+                                        <div class="order-current__price">2 220 642 р.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-current">
+                                <div class="order-current__wrap">
+                                    <div class="order-current__column">
+                                        <div class="order-current__group">
+                                            <div class="order-current__number">№ 1125005</div>
+                                            <div class="order-current__status --completed">Выполнен</div>
+                                        </div>
+        
+                                        <div class="order-current__group">
+                                            <div class="order-current__cancel order-cancel">
+                                                <a href="#">Отменить заказ</a>
+                                                <div class="order-cancel__hint">
+                                                    Отмена заказа возможна в течение 2х часов после оформления.
+                                                </div>
+                                            </div>
+                                            <div class="order-current__repeat order-repeat">
+                                                <a href="#">Повторить заказ</a>
+                                            </div>
+                                            <div class="order-current__watch">
+                                                <a href="#">Посмотреть заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Дата создания</div>
+                                        <div class="order-current__text">01.10.2020</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ доставки</div>
+                                        <div class="order-current__text">Доставка по Московской области</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ оплаты</div>
+                                        <div class="order-current__text">Наличный при получении</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Сумма</div>
+                                        <div class="order-current__price">2 220 642 р.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-current">
+                                <div class="order-current__wrap">
+                                    <div class="order-current__column">
+                                        <div class="order-current__group">
+                                            <div class="order-current__number">№ 1125005</div>
+                                            <div class="order-current__status --canceled">Отменен</div>
+                                        </div>
+        
+                                        <div class="order-current__group">
+                                            <div class="order-current__repeat order-repeat">
+                                                <a href="#">Повторить заказ</a>
+                                            </div>
+                                            <div class="order-current__watch">
+                                                <a href="#">Посмотреть заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Дата создания</div>
+                                        <div class="order-current__text">01.10.2020</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ доставки</div>
+                                        <div class="order-current__text">Доставка по Московской области</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ оплаты</div>
+                                        <div class="order-current__text">Наличный при получении</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Сумма</div>
+                                        <div class="order-current__price">2 220 642 р.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <ul class="profile-order__pagination pagination">
+                            <li class="pagination__item --prev"><a href="#">Назад</a></li>
+                            <li class="pagination__item --number"><a href="#">1</a></li>
+                            <li class="pagination__item --number"><a href="#">2</a></li>
+                            <li class="pagination__item --number"><a href="#">3</a></li>
+                            <li class="pagination__item --number"><a href="#">4</a></li>
+                            <li class="pagination__item --number"><a href="#">5</a></li>
+                            <li class="pagination__item --dots"><span>...</span></li>
+                            <li class="pagination__item --number"><a href="#">6</a></li>
+                            <li class="pagination__item --next"><a href="#">Вперед</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="profile-order__item profile-tabs__item" id="tabs-2">
+                        <div class="profile-order__list">
+                            <div class="order-current">
+                                <div class="order-current__wrap">
+                                    <div class="order-current__column">
+                                        <div class="order-current__group">
+                                            <div class="order-current__number">№ 1125005</div>
+                                            <div class="order-current__status --new">Новый</div>
+                                        </div>
+        
+                                        <div class="order-current__group">
+                                            <div class="order-current__cancel order-cancel">
+                                                <a href="#">Отменить заказ</a>
+                                                <div class="order-cancel__hint">
+                                                    Отмена заказа возможна в течение 2х часов после оформления.
+                                                </div>
+                                            </div>
+                                            <div class="order-current__repeat order-repeat">
+                                                <a href="#">Повторить заказ</a>
+                                            </div>
+                                            <div class="order-current__watch">
+                                                <a href="#">Посмотреть заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Дата создания</div>
+                                        <div class="order-current__text">01.10.2020</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ доставки</div>
+                                        <div class="order-current__text">Доставка по Московской области</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ оплаты</div>
+                                        <div class="order-current__text">Наличный при получении</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Сумма</div>
+                                        <div class="order-current__price">2 220 642 р.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-current">
+                                <div class="order-current__wrap">
+                                    <div class="order-current__column">
+                                        <div class="order-current__group">
+                                            <div class="order-current__number">№ 1125005</div>
+                                            <div class="order-current__status --completed">Выполнен</div>
+                                        </div>
+        
+                                        <div class="order-current__group">
+                                            <div class="order-current__cancel order-cancel">
+                                                <a href="#">Отменить заказ</a>
+                                                <div class="order-cancel__hint">
+                                                    Отмена заказа возможна в течение 2х часов после оформления.
+                                                </div>
+                                            </div>
+                                            <div class="order-current__repeat order-repeat">
+                                                <a href="#">Повторить заказ</a>
+                                            </div>
+                                            <div class="order-current__watch">
+                                                <a href="#">Посмотреть заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Дата создания</div>
+                                        <div class="order-current__text">01.10.2020</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ доставки</div>
+                                        <div class="order-current__text">Доставка по Московской области</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ оплаты</div>
+                                        <div class="order-current__text">Наличный при получении</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Сумма</div>
+                                        <div class="order-current__price">2 220 642 р.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="profile-order__pagination pagination">
+                            <li class="pagination__item --prev"><a href="#">Назад</a></li>
+                            <li class="pagination__item --number"><a href="#">1</a></li>
+                            <li class="pagination__item --number"><a href="#">2</a></li>
+                            <li class="pagination__item --number"><a href="#">3</a></li>
+                            <li class="pagination__item --number"><a href="#">4</a></li>
+                            <li class="pagination__item --number"><a href="#">5</a></li>
+                            <li class="pagination__item --dots"><span>...</span></li>
+                            <li class="pagination__item --number"><a href="#">6</a></li>
+                            <li class="pagination__item --next"><a href="#">Вперед</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="profile-order__item profile-tabs__item" id="tabs-3">
+                        <div class="profile-order__list">
+                            <div class="order-current">
+                                <div class="order-current__wrap">
+                                    <div class="order-current__column">
+                                        <div class="order-current__group">
+                                            <div class="order-current__number">№ 1125005</div>
+                                            <div class="order-current__status --canceled">Отменен</div>
+                                        </div>
+        
+                                        <div class="order-current__group">
+                                            <div class="order-current__repeat order-repeat">
+                                                <a href="#">Повторить заказ</a>
+                                            </div>
+                                            <div class="order-current__watch">
+                                                <a href="#">Посмотреть заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Дата создания</div>
+                                        <div class="order-current__text">01.10.2020</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ доставки</div>
+                                        <div class="order-current__text">Доставка по Московской области</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Способ оплаты</div>
+                                        <div class="order-current__text">Наличный при получении</div>
+                                    </div>
+        
+                                    <div class="order-current__column">
+                                        <div class="order-current__name">Сумма</div>
+                                        <div class="order-current__price">2 220 642 р.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="profile-order__pagination pagination">
+                            <li class="pagination__item --prev"><a href="#">Назад</a></li>
+                            <li class="pagination__item --number"><a href="#">1</a></li>
+                            <li class="pagination__item --number"><a href="#">2</a></li>
+                            <li class="pagination__item --number"><a href="#">3</a></li>
+                            <li class="pagination__item --number"><a href="#">4</a></li>
+                            <li class="pagination__item --number"><a href="#">5</a></li>
+                            <li class="pagination__item --dots"><span>...</span></li>
+                            <li class="pagination__item --number"><a href="#">6</a></li>
+                            <li class="pagination__item --next"><a href="#">Вперед</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="subscribe">
+    <div class="container">
+      <div class="subscribe__wrap">
+        <div class="subscribe__column">
+          <div class="subscribe__group">
+            <h2 class="subscribe__title title-h2">Будьте всегда в курсе!</h2>
+            <div class="subscribe__subtitle">Не пропускайте новости о наших акциях, скидках и событиях, подпишитесь и узнавайте о них первым</div>
+          </div>
+        </div>
+
+        <div class="subscribe__column">
+          <form action="#" class="subscribe__form from-sub">
+            <div class="from-sub__wrap">
+              <input class="from-sub__input" name="email" type="text" placeholder="Ваш e-mail">
+              <input class="from-sub__button main-btn" type="submit" value="Подписаться">
+            </div>
+          </form>
+          <div class="subscribe__sub">
+            Отправляя данные, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+@@include("components/_footer.html")

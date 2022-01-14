@@ -1,0 +1,33 @@
+.info-block-general {
+    &__wrap {
+        padding-bottom: 5.5%;
+    }
+
+    &__title {
+        margin-bottom: 2.8%;
+    }
+
+    &__text {
+        & p {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        & ul {
+            margin-bottom: 20px;
+            & li {
+                list-style: inside;
+                margin-bottom: 10px;
+            }
+        }
+
+        & ol {
+            & li {
+                list-style-position: inside;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

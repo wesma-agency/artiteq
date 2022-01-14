@@ -1,0 +1,167 @@
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 13px;
+	line-height: 150%;
+	color: #4f4f4f;
+	font-weight: 400;
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+body.lock-modal {
+	overflow: hidden;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1470px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.title-h1,
+h1 {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 44px;
+	color: #0079be;
+}
+
+.title-h2,
+h2 {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 44px;
+	color: #0079be;
+}
+
+.title-h3,
+h3 {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	color: #0079be;
+}
+
+.main-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 14px 15px;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 18px;
+	text-align: center;
+	color: #fff;
+	border: 1px solid #0079be;
+	background: #0079be;
+	border-radius: 2px;
+	transition: all 0.3s ease;
+	overflow: hidden;
+	&:hover {
+		background: #0086d2;
+		border-color: #0086d2;
+	}
+}
+
+@media (max-width: 1170px) {
+	.title-h1,
+	h1 {
+		@include adaptiv-font(32, 20);
+		line-height: calc(30px + 24 * ((100vw - 320px) / 960));
+	}
+
+	.title-h2,
+	h2 {
+		@include adaptiv-font(32, 18);
+		line-height: calc(30px + 24 * ((100vw - 320px) / 960));
+	}
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"] {
+	transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:not(.quantity-order__input) {
+	border-color: #000822;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+	border: 1px solid #d1d1d1;
+	background-color: #d1d1d1;
+}
+
+.breadcrumbs {
+	&__wrap {
+		padding: 4.2% 0 2% 0;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		margin-right: 25px;
+		margin-bottom: 10px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	& a {
+		position: relative;
+		color: #4f4f4f;
+		&::before {
+			content: "/";
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			right: -15px;
+		}
+		&:hover {
+			border-bottom: 1px solid #4f4f4f;
+		}
+	}
+	& span {
+		color: #4f4f4f;
+	}
+}
+
+@media (max-width: 500px) {
+	.breadcrumbs {
+		&__wrap {
+			padding: 6% 0 6% 0;
+		}
+
+		&__item {
+			font-size: 11px;
+		}
+	}
+}

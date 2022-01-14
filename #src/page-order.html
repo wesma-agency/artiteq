@@ -1,0 +1,463 @@
+@@include("components/_header.html") 
+
+@@include("components/_catalog-menu.html")
+
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__wrap">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="#">Корзина</a></li>
+                <li class="breadcrumbs__item"><span>Оформление заказа</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="making-order">
+    <div class="container">
+        <div class="making-order__wrap">
+            <h2 class="making-order__title title-h2">Оформление заказа</h2>
+            <div class="making-order__row">
+                <div class="making-order__column">
+                    <div class="making-order__form-wrap">
+                        <div class="making-order__form-name">Контактные данные</div>
+                        <form action="#" class="making-order__form-contact form-contact">
+
+                            <div class="form-contact__wrap-radio">
+                                <label class="form-contact__radio form-radio js-trigger-legal">
+                                    <input name="user" type="radio" checked>
+                                    <span class="form-contact__radio-text">Физическое лицо</span>
+                                </label>
+    
+                                <label class="form-contact__radio form-radio js-trigger-legal --legal">
+                                    <input name="user" type="radio">
+                                    <span class="form-contact__radio-text">Юридическое лицо</span>
+                                </label>
+                            </div>
+
+
+                            <div class="form-contact__wrap-form">
+                                    <div class="form-contact__input-wrap js-from-wrap-input --legal">
+                                        <select name="">
+                                            <option value="Форма организации">Форма организации</option>
+                                            <option value="ИП">ИП</option>
+                                            <option value="ООО">ООО</option>
+                                            <option value="АО">АО</option>
+                                            <option value="ЗАО">ЗАО</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class="form-contact__input-wrap js-from-wrap-input --legal">
+                                        <input class="form-contact__input" type="text" placeholder="Название организации">
+                                    </div>
+    
+                                    <div class="form-contact__input-wrap js-from-wrap-input --legal">
+                                        <input class="form-contact__input" type="text" placeholder="Юридический адрес">
+                                    </div>
+    
+                                    
+                                    <div class="form-contact__input-wrap js-from-wrap-input --legal">
+                                        <input class="form-contact__input" type="text" placeholder="ИНН">
+                                    </div>
+    
+                                    <div class="form-contact__input-wrap js-from-wrap-input --legal">
+                                        <input class="form-contact__input" type="text" placeholder="КПП">
+                                    </div>
+    
+                                    <div class="form-contact__input-wrap js-from-wrap-input --legal">
+                                        <input class="form-contact__input" type="text" placeholder="БИК">
+                                    </div>
+    
+                                    <div class="form-contact__input-wrap js-from-wrap-input --legal">
+                                        <input class="form-contact__input" type="text" placeholder="Банк">
+                                    </div>
+    
+                                    <div class="form-contact__input-wrap js-from-wrap-input --legal">
+                                        <input class="form-contact__input" type="text" placeholder="Коор. счет">
+                                    </div>
+    
+                                    <div class="form-contact__input-wrap js-from-wrap-input --legal">
+                                        <input class="form-contact__input" type="text" placeholder="Расчетный счет">
+                                    </div>
+
+                                    <div class="form-contact__input-wrap">
+                                        <input class="form-contact__input" type="text" placeholder="Ваше ФИО *">
+                                    </div>
+    
+                                    <div class="form-contact__input-wrap">
+                                        <input class="form-contact__input" type="tel" placeholder="Ваш телефон *">
+                                    </div>
+    
+                                    <div class="form-contact__input-wrap">
+                                        <input class="form-contact__input" type="text" placeholder="Ваш E-mail *">
+                                    </div>
+    
+                                    <div class="form-contact__input-wrap --textarea">
+                                        <textarea class="form-contact__textarea" placeholder="Адрес доставки"></textarea>
+                                        <textarea class="form-contact__textarea" placeholder="Комментарий к заказу"></textarea>
+                                    </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="making-order__form-wrap">
+                        <div class="making-order__form-name">Выберите способ доставки</div>
+                        <form action="#" class="making-order__from-delivery from-delivery">
+                            <div class="from-delivery__list">
+                                <div class="from-delivery__item">
+                                    <div class="from-delivery__left">
+                                        <label class="from-delivery__radio form-radio">
+                                            <input name="delivery"  type="radio" checked>
+                                            <span class="from-delivery__radio-text">Самовывоз со склада</span>
+                                        </label>
+                                        <div class="from-delivery__text">Самовывоз из точки выдачи заказов по адресу:</div>
+                                        <div class="from-delivery__address">МО, п. Заречье, ул. Торговая, д.2</div>
+                                    </div>
+                                    <div class="from-delivery__right">
+                                        <div class="from-delivery__value">бесплатно</div>
+                                    </div>
+                                </div>
+
+                                <div class="from-delivery__item">
+                                    <div class="from-delivery__left">
+                                        <label class="from-delivery__radio form-radio">
+                                            <input name="delivery"  type="radio" checked>
+                                            <span class="from-delivery__radio-text">Самовывоз из шоурума</span>
+                                        </label>
+                                        <div class="from-delivery__text">Самовывоз из точки выдачи заказов по адресу:</div>
+                                        <div class="from-delivery__address">Москва, Нижняя Сыромятническая, д. 10, стр.3, 2 этаж, Artiteq
+                                            Территория Центра дизайна ARTPLAY</div>
+                                    </div>
+                                    <div class="from-delivery__right">
+                                        <div class="from-delivery__value">бесплатно</div>
+                                    </div>
+                                </div>
+
+                                <div class="from-delivery__item">
+                                    <div class="from-delivery__left">
+                                        <label class="from-delivery__radio form-radio">
+                                            <input name="delivery"  type="radio">
+                                            <span class="from-delivery__radio-text">Доставка по Москве</span>
+                                        </label>
+                                        <div class="from-delivery__text">Заказ доставляется до адреса покупателя в Москве, в пределах МКАД.</div>
+                                    </div>
+                                    <div class="from-delivery__right">
+                                        <div class="from-delivery__value">600 р.</div>
+                                    </div>
+                                </div>
+
+                                <div class="from-delivery__item">
+                                    <div class="from-delivery__left">
+                                        <label class="from-delivery__radio form-radio">
+                                            <input name="delivery"  type="radio">
+                                            <span class="from-delivery__radio-text">Доставка по Московской области</span>
+                                        </label>
+                                        <div class="from-delivery__text">Заказ доставляется до адреса покупателя в МО, не более 25 км от МКАД.</div>
+                                    </div>
+                                    <div class="from-delivery__right">
+                                        <div class="from-delivery__value">1 200 р.</div>
+                                    </div>
+                                </div>
+
+                                <div class="from-delivery__item">
+                                    <div class="from-delivery__left">
+                                        <label class="from-delivery__radio form-radio">
+                                            <input name="delivery"  type="radio">
+                                            <span class="from-delivery__radio-text">Доставка по России</span>
+                                        </label>
+                                        <div class="from-delivery__text">Доставляем до терминала транспортной компании в Москве и отправляем
+                                            в город указанный покупателем. Стоимость доставки до города покупателя
+                                            рассчитывается ТК на основании габаритов, веса и города назначения.
+                                        </div>
+                                    </div>
+                                    <div class="from-delivery__right">
+                                        <div class="from-delivery__value">рассчитывается индивидуально</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="making-order__form-wrap">
+                        <div class="making-order__form-name">Выберите способ оплаты</div>
+
+                        <form action="#" class="making-order__form-payment form-payment">
+                            <div class="form-payment__list">
+                                <label class="form-payment__radio">
+                                    <input name="payment" type="radio" checked>
+                                    <div class="form-payment__item">
+                                        <div class="form-payment__icon"><img src="./img/icon-order-payment-1.svg" alt=""></div>
+                                        <div class="form-payment__group">
+                                            <div class="form-payment__name">Наличными при получении</div>
+                                            <div class="form-payment__text">При получении, после проверки товара</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="form-payment__radio">
+                                    <input name="payment" type="radio" >
+                                    <div class="form-payment__item">
+                                        <div class="form-payment__icon"><img src="./img/icon-order-payment-2.svg" alt=""></div>
+                                        <div class="form-payment__group">
+                                            <div class="form-payment__name">Банковской картой при получении</div>
+                                            <div class="form-payment__text">VISA, MasterCard, МИР</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="form-payment__radio">
+                                    <input name="payment" type="radio" >
+                                    <div class="form-payment__item">
+                                        <div class="form-payment__icon"><img src="./img/icon-order-payment-3.svg" alt=""></div>
+                                        <div class="form-payment__group">
+                                            <div class="form-payment__name">Онлайн через сайт</div>
+                                            <div class="form-payment__text">Оплата онлайн через платежный шлюз
+                                                крупнейшенго банка России
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="form-payment__radio">
+                                    <input name="payment" type="radio" >
+                                    <div class="form-payment__item">
+                                        <div class="form-payment__icon"><img src="./img/icon-order-payment-4.svg" alt=""></div>
+                                        <div class="form-payment__name">Безналичным переводом</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="making-order__form-wrap">
+                        <div class="making-order__form-name">Дополнительные услуги</div>
+                        <form action="#" class="making-order__form-services form-services">
+                            <div class="form-services__list">
+                                <label class="form-services__checkbox">
+                                    <input type="checkbox">
+                                    <div class="form-services__item">
+                                        <div class="form-services__group">
+                                            <div class="form-services__name">
+                                                Монтажные работы 
+                                                <div class="form-services__hint">
+                                                    <span class="form-services__hint-icon">!</span>
+                                                    <div class="form-services__hint-popup">
+                                                        <div class="form-services__hint-price">Стоимость услуги <span>1 200</span> руб/час</div>
+                                                        <div class="form-services__hint-text">Окончательная цена рассчитывается
+                                                            индивидуально менеджером после
+                                                            оформления заказа
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="form-services__text">Поясняющий текст об услуге</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="form-services__checkbox">
+                                    <input type="checkbox">
+                                    <div class="form-services__item">
+                                        <div class="form-services__group">
+                                            <div class="form-services__name">
+                                                Развеска картин
+                                                <div class="form-services__hint">
+                                                    <span class="form-services__hint-icon">!</span>
+                                                    <div class="form-services__hint-popup">
+                                                        <div class="form-services__hint-price">Стоимость услуги <span>1 200</span> руб/час</div>
+                                                        <div class="form-services__hint-text">Окончательная цена рассчитывается
+                                                            индивидуально менеджером после
+                                                            оформления заказа
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="form-services__text">Поясняющий текст об услуге</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="form-services__checkbox">
+                                    <input type="checkbox">
+                                    <div class="form-services__item">
+                                        <div class="form-services__group">
+                                            <div class="form-services__name">
+                                                Консультация дизайнера
+                                                <div class="form-services__hint">
+                                                    <span class="form-services__hint-icon">!</span>
+                                                    <div class="form-services__hint-popup">
+                                                        <div class="form-services__hint-price">Стоимость услуги <span>1 200</span> руб/час</div>
+                                                        <div class="form-services__hint-text">Окончательная цена рассчитывается
+                                                            индивидуально менеджером после
+                                                            оформления заказа
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="form-services__text">Поясняющий текст об услуге</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="form-services__checkbox">
+                                    <input type="checkbox">
+                                    <div class="form-services__item">
+                                        <div class="form-services__group">
+                                            <div class="form-services__name">
+                                                Развесовка лесок и крючков
+                                                <div class="form-services__hint">
+                                                    <span class="form-services__hint-icon">!</span>
+                                                    <div class="form-services__hint-popup">
+                                                        <div class="form-services__hint-price">Стоимость услуги <span>1 200</span> руб/час</div>
+                                                        <div class="form-services__hint-text">Окончательная цена рассчитывается
+                                                            индивидуально менеджером после
+                                                            оформления заказа
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="form-services__text">Поясняющий текст об услуге</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="form-services__checkbox">
+                                    <input type="checkbox">
+                                    <div class="form-services__item">
+                                        <div class="form-services__group">
+                                            <div class="form-services__name">
+                                                Изготовление рамок по вашим размерам
+                                                <div class="form-services__hint">
+                                                    <span class="form-services__hint-icon">!</span>
+                                                    <div class="form-services__hint-popup">
+                                                        <div class="form-services__hint-price">Стоимость услуги <span>1 200</span> руб/час</div>
+                                                        <div class="form-services__hint-text">Окончательная цена рассчитывается
+                                                            индивидуально менеджером после
+                                                            оформления заказа
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="form-services__text">Поясняющий текст об услуге</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="form-services__checkbox">
+                                    <input type="checkbox">
+                                    <div class="form-services__item">
+                                        <div class="form-services__group">
+                                            <div class="form-services__name">
+                                                Покраска профиля
+                                                <div class="form-services__hint">
+                                                    <span class="form-services__hint-icon">!</span>
+                                                    <div class="form-services__hint-popup">
+                                                        <div class="form-services__hint-price">Стоимость услуги <span>1 200</span> руб/час</div>
+                                                        <div class="form-services__hint-text">Окончательная цена рассчитывается
+                                                            индивидуально менеджером после
+                                                            оформления заказа
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="form-services__text">Поясняющий текст об услуге</div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="making-order__column">
+                    <div class="making-order__result order-result">
+                        <div class="order-result__row">
+                            <div class="order-result__title">Ваш заказ</div>
+                            <div class="order-result__group-info">
+                                <div class="order-result__product">
+                                    <div class="order-result__product-wrap">
+                                        <div class="order-result__name">Товары</div>
+                                        <div class="order-result__value"><span>10 000</span> р.</div>
+                                    </div>
+                                    <div class="order-result__product-quantity"><span>4 </span>шт.</div>
+                                </div>
+
+                                <div class="order-result__discount">
+                                    <div class="order-result__name">Скидка</div>
+                                    <div class="order-result__value"><span>- 2 000</span> р.</div>
+                                </div>
+
+                                <div class="order-result__delivery">
+                                    <div class="order-result__name">Доставка</div>
+                                    <div class="order-result__value"><span>600</span> р.</div>
+                                </div>
+
+                                <div class="order-result__payment">
+                                    <div class="order-result__name">Оплата при получении</div>
+                                </div>
+                            </div>
+
+                            <div class="order-result__group-service">
+                                <div class="order-result__title-service">Дополнительные услуги</div>
+                                <div class="order-result__list-service">
+                                    <div class="order-result__item-service">Развесовка лесок и крючков</div>
+                                    <div class="order-result__item-service">Консультация дизайнера</div>
+                                    <div class="order-result__item-service">Монтажные работы</div>
+                                    <div class="order-result__item-service">Покраска профиля</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-result__row">
+                            <div class="order-result__price-result">
+                                <div class="order-result__title-price">Итого к оплате:</div>
+                                <div class="order-result__price"><span>8 845</span> р.</div>
+                            </div>
+
+                            <div class="order-result__button">
+                                <a href="#" class="order-result__button-add main-btn">Заказ подтверждаю</a>
+                                <a href="#" class="order-result__button-buy-oneclick main-btn animButton --blue" data-content="Заказ в один клик">Заказ в один клик</a>
+                            </div>
+
+                            <div class="order-result__text">
+                                Нажимая кнопку “Зарегистрироваться” я даю свое согласие на обработку моих персональных 
+                                данных на условиях <a href="#">Соглашения об обработке персональных данных.</a><br>
+                                Личная информация защищена и не передается сторонним ресурсам.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="subscribe">
+    <div class="container">
+      <div class="subscribe__wrap">
+        <div class="subscribe__column">
+          <div class="subscribe__group">
+            <h2 class="subscribe__title title-h2">Будьте всегда в курсе!</h2>
+            <div class="subscribe__subtitle">Не пропускайте новости о наших акциях, скидках и событиях, подпишитесь и узнавайте о них первым</div>
+          </div>
+        </div>
+
+        <div class="subscribe__column">
+          <form action="#" class="subscribe__form from-sub">
+            <div class="from-sub__wrap">
+              <input class="from-sub__input" name="email" type="text" placeholder="Ваш e-mail">
+              <input class="from-sub__button main-btn" type="submit" value="Подписаться">
+            </div>
+          </form>
+          <div class="subscribe__sub">
+            Отправляя данные, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+@@include("components/_footer.html")

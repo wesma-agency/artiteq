@@ -1,0 +1,85 @@
+@@include("components/_header.html") 
+
+@@include("components/_catalog-menu.html")
+
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__wrap">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="#">Личный кабинет</a></li>
+                <li class="breadcrumbs__item"><span>Мои заказы</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="profile">
+    <div class="container">
+        <div class="profile__title title-h1">Отмена заказа № 1125005</div>
+    </div>
+
+    <div class="profile__link profile-links">
+        <div class="container">
+            <div class="profile-links__list">
+                <div class="profile-links__item"><a class="profile-links__link current" href="#">Мои заказы</a></div>
+                <div class="profile-links__item"><a class="profile-links__link" href="#">Персональные данные</a></div>
+                <div class="profile-links__item"><a class="profile-links__link" href="#">Бонусная система</a></div>
+                <div class="profile-links__item"><a class="profile-links__link" href="#">Избранное</a></div>
+                <div class="profile-links__item"><a class="profile-links__link" href="#">Моя корзина</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile__order-item card-order">
+        <div class="container">
+            <div class="card-order__wrap">
+                <div class="card-order__back-lsit">
+                    <div class="card-order__back-lsit-button">
+                        <a href="#">Вернуться в список заказов</a>
+                    </div>
+                </div>
+
+                <div class="card-order__wrap-cancel card-order-cancel">
+                    <div class="card-order-cancel__text">Отмена заказа необратима.</div>
+
+                    <form action="#" class="card-order-cancel__form form-cancel">
+                        <div class="form-cancel__text">Укажите, пожалуйста, причину отмены заказа:</div>
+                        <div class="form-cancel__textarea">
+                            <textarea placeholder="Опишите причину"></textarea>
+                        </div>
+                        <input type="submit" value="Отменить заказ" class="form-cancel__submit main-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="subscribe">
+    <div class="container">
+      <div class="subscribe__wrap">
+        <div class="subscribe__column">
+          <div class="subscribe__group">
+            <h2 class="subscribe__title title-h2">Будьте всегда в курсе!</h2>
+            <div class="subscribe__subtitle">Не пропускайте новости о наших акциях, скидках и событиях, подпишитесь и узнавайте о них первым</div>
+          </div>
+        </div>
+
+        <div class="subscribe__column">
+          <form action="#" class="subscribe__form from-sub">
+            <div class="from-sub__wrap">
+              <input class="from-sub__input" name="email" type="text" placeholder="Ваш e-mail">
+              <input class="from-sub__button main-btn" type="submit" value="Подписаться">
+            </div>
+          </form>
+          <div class="subscribe__sub">
+            Отправляя данные, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+@@include("components/_footer.html")

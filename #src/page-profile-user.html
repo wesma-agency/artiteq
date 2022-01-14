@@ -1,0 +1,279 @@
+@@include("components/_header.html") 
+
+@@include("components/_catalog-menu.html")
+
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__wrap">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="#">Личный кабинет</a></li>
+                <li class="breadcrumbs__item"><span>Профиль</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="profile">
+    <div class="container">
+        <div class="profile__title title-h1">Профиль</div>
+    </div>
+
+    <div class="profile__link profile-links">
+        <div class="container">
+            <div class="profile-links__list">
+                <div class="profile-links__item"><a class="profile-links__link current" href="#">Мои заказы</a></div>
+                <div class="profile-links__item"><a class="profile-links__link" href="#">Персональные данные</a></div>
+                <div class="profile-links__item"><a class="profile-links__link" href="#">Бонусная система</a></div>
+                <div class="profile-links__item"><a class="profile-links__link" href="#">Избранное</a></div>
+                <div class="profile-links__item"><a class="profile-links__link" href="#">Моя корзина</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile__user user-profile">
+        <div class="container">
+            <div class="user-profile__wrap">
+                <form action="#" class="user-profile__form form-user-profile">
+                    <div class="form-user-profile__wrap-radio">
+                        <label class="form-user-profile__radio js-trigger-legal">
+                            <input type="radio" name="user-profile" checked>
+                            <div class="form-user-profile__text">Физическое лицо</div>
+                        </label>
+
+                        <label class="form-user-profile__radio js-trigger-legal --legal">
+                            <input type="radio" name="user-profile">
+                            <div class="form-user-profile__text">Юридическое лицо</div>
+                        </label>
+                    </div>
+
+                    <div class="form-user-profile__personal-data js-from-wrap-input --individual">
+                        <div class="form-user-profile__title">Персональные данные</div>
+                        <div class="form-user-profile__wrap">
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Ваше ФИО</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="Иванов Иван Иванович">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Телефон</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="tel" placeholder="+7 (000) 000-00-00">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Город</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="Москва">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Дата рождения</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="11.11.1980">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">E-Mail</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="1202@gmail.com">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Адрес доставки</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="Абакан">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="form-user-profile__company-data js-from-wrap-input --legal">
+                        <div class="form-user-profile__title">Данные компании</div>
+                        <div class="form-user-profile__wrap">
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Форма организации</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="ООО">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Названии компании</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="ООО Галерея">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Юридический адрес</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="Москва, Коптевская 83">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">ИНН</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="123456789">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">КПП</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="123456789">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">БИК</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="123456789">
+                                </div>
+                            </div>
+                            
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Банк</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="Сбербанк">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Коор. счет</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="123456789">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Расчетный счет</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="123456789">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="form-user-profile__contact-info js-from-wrap-input --legal">
+                        <div class="form-user-profile__title">Контактная информация</div>
+                        <div class="form-user-profile__wrap">
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Контактное лицо*</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="Иванов Иван Иванович">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Телефон</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="tel" placeholder="+7 (000) 000-00-00">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">E-Mail</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="1202@gmail.com">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Индекс</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="1111111">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Город</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="Москва">
+                                </div>
+                            </div>
+
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Адрес доставки</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="text" placeholder="Дружная, 34">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="form-user-profile__password">
+                        <div class="form-user-profile__title">Изменить пароль</div>
+                        <div class="form-user-profile__wrap">
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Новый пароль</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="password">
+                                    <img class="form-user-profile__icon-view-password icon-view-password" src="./img/icon-view-password.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="form-user-profile__group-input">
+                                <div class="form-user-profile__input-text">Повторите новый пароль</div>
+                                <div class="form-user-profile__wrap-input">
+                                    <input type="password">
+                                    <img class="form-user-profile__icon-view-password icon-view-password" src="./img/icon-view-password.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-user-profile__button">
+                        <input class="main-btn" type="submit" value="Сохранить изменения">
+                    </div>
+
+                    <div class="form-user-profile__subtext">
+                    *При обновлении своих данных заполнять пароль не обязательно.  Только если необходимо изменить свой пароль.
+                    Пароль должен быть не менее 10 символов длиной, содержать латинские символы верхнего регистра (A-Z),
+                    содержать латинские символы нижнего регистра (a-z), содержать цифры (0-9), содержать знаки пунктуации (,.<>/?;:'"[]{}\|`~!@#$%^&*()-_+=).
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="subscribe">
+    <div class="container">
+      <div class="subscribe__wrap">
+        <div class="subscribe__column">
+          <div class="subscribe__group">
+            <h2 class="subscribe__title title-h2">Будьте всегда в курсе!</h2>
+            <div class="subscribe__subtitle">Не пропускайте новости о наших акциях, скидках и событиях, подпишитесь и узнавайте о них первым</div>
+          </div>
+        </div>
+
+        <div class="subscribe__column">
+          <form action="#" class="subscribe__form from-sub">
+            <div class="from-sub__wrap">
+              <input class="from-sub__input" name="email" type="text" placeholder="Ваш e-mail">
+              <input class="from-sub__button main-btn" type="submit" value="Подписаться">
+            </div>
+          </form>
+          <div class="subscribe__sub">
+            Отправляя данные, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+@@include("components/_footer.html")

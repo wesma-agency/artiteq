@@ -1,0 +1,31 @@
+.favorites-page {
+    &__wrap {
+        padding-bottom: 4.2%;
+    }
+
+    &__title {
+        margin-bottom: 2.8%;
+    }
+
+    &__lsit {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .favorites-page {
+        &__lsit {
+            grid-gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .favorites-page {
+        &__lsit {
+            grid-template-columns: 1fr;
+        }
+    }
+}
